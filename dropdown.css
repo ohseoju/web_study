@@ -1,0 +1,17 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border: 3px solid salmon;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background: pink;
+    box-shadow: 5px 5px 5px 5px grey;
+    /* 첫번째 : 왼쪽위치,  */
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}

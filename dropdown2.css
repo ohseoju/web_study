@@ -1,0 +1,23 @@
+.h1 {
+    left: 40%;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    left: 40%;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    left: -400px;
+    background: orange;
+    text-align: center;
+    width: 350px;
+    height: 100px;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
