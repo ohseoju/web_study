@@ -1,0 +1,94 @@
+@font-face {
+    font-family: '지마켓';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '가나';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main1{
+    width: 1920px;
+    height: 1080px;
+    background-color: #fff6f8;
+}
+
+.logo {
+    position: absolute;
+    left: 60px;
+    top: 60px;
+}
+
+
+
+
+
+input[id="menuicon"]{
+    display: none;
+}
+input[id="menuicon"]+label{
+    display: block;
+    width: 60px;
+    height: 45px;
+    position: relative;
+    top: 60px;
+    left: 1800px;
+    cursor: pointer;
+}
+input[id="menuicon"]+label span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    border-radius: 50px;
+    background: #000;
+    transition: all .35s;
+}
+input[id="menuicon"]+label span:nth-child(1){
+    top: 0;
+}
+input[id="menuicon"]+label span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+}
+input[id="menuicon"]+label span:nth-child(3){
+    bottom: 0;
+}
+    
+input[id="menuicon"]:checked+label span:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked+label span:nth-child(2){
+    opacity: 0;
+}
+input[id="menuicon"]:checked+label span:nth-child(3){
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+
+
+
+
+.point{
+    font-family: '가나';
+    color: #ff4b87;
+}
+
+.title{
+    font-family: '지마켓';
+    font-weight: 300;
+    font-size: 140pt;
+    line-height: 160pt;
+    letter-spacing: -0.07em;
+    position: relative;
+    top: 320px;
+    left: 180px;
+}
+
